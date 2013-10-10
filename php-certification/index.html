@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, target-densitydpi=medium-dpi, user-scalable=0" />
+
+        <title>PHP Study Quiz FREE</title>
+
+        <link type="text/css" media="screen" href="css/themes/css/apple.css" id="appTheme" rel="stylesheet">
+        <link rel='stylesheet' type='text/css' href='js/syntax/styles/shCore.css'>
+        <link rel='stylesheet' type='text/css' href='js/syntax/styles/shThemeDefault.css' id='syntaxTheme'>
+        <link type="text/css" media="screen" href="css/iphone.css" id="phoneTheme" rel="stylesheet">
+        <link type="text/css" media="screen" href="css/icheck/square/blue.css" rel="stylesheet">
+        <link type="text/css" media="screen" href="css/index.css" rel="stylesheet">
+
+        <script type="text/javascript">
+            var isIOS = /like Mac OS/i.test(window.navigator.userAgent);
+            if (!isIOS) {
+                document.getElementById('appTheme').href = 'css/themes/css/jqtouch.css';
+                document.getElementById('phoneTheme').href = 'css/android.css';
+                document.getElementById('syntaxTheme').href = 'js/syntax/styles/shThemeRDark.css';
+            }
+        </script>
+    </head>
+    <body>
+
+        <div id="jqt" class="portrait" style="min-height: 682px;">
+            <div id="home" class="current" style="top: 0px;">
+                <div class="toolbar">
+                    <!-- <h1>PHP 5.3 ZCE</h1> -->
+                    <h1>PHP Study Quiz</h1>
+                    <a class="button slideup" id="infoButton" href="#about" style="">About</a>
+                </div>
+                <div class="scroll">
+                    <ul class="rounded">
+                        <li class="arrow" id="submit-question"><a href="mailto:bernatmv@evensoftware.com">Submit new question</a></li>
+                        <li class="">
+                            <a href="#choose-category" style="-webkit-user-drag: none;">
+                                <label class="tight">Showing</label>
+                                <select id="choose-category-select">
+                                    <optgroup label="All questions">
+                                        <option value="0">all questions minus PHP4</option>
+                                        <option value="1">all questions</option>
+                                    </optgroup>
+                                    <optgroup label="Categories">
+                                        <option value="20">PHP basic questions</option>
+                                        <option value="21">web questions</option>
+                                        <option value="22">OOP questions</option>
+                                        <option value="23">security questions</option>
+                                        <option value="24">data types questions</option>
+                                        <option value="25">IO questions</option>
+                                        <option value="26">string questions</option>
+                                        <option value="27">database questions</option>
+                                        <option value="28">array questions</option>
+                                        <option value="29">PHP4 questions</option>
+                                    </optgroup>
+                                </select>
+                            </a>
+                        </li>
+                        <li class="" id="include-php4-option">Include PHP4 quiz <span class="toggle"><input id="php4-questions" type="checkbox"></span></li>
+                    </ul>
+                    <ul class="rounded">
+                        <!-- <li class="arrow" id="start-exam">Start an exam simulacrum</li> -->
+                        <li class="arrow" id="random-question"><a id="random-question-link" class="slide" href="#question">Random question</a></li>
+                        <li class="arrow" id="bookmark-question">&nbsp;</li>
+                    </ul>
+                    <h2>Questions</h2>
+                    <ul class="rounded" id="questions-list">
+                        <li class="arrow">Loading...</li>
+                    </ul>
+                    <ul class="individual" id="questions-pagination">
+                    </ul>
+                    <div class="info">
+                        <p>www.evensoftware.com</p>
+                        <p>Bernat Martinez - bernatmv@evensoftware.com</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="about" class="selectable" style="top: 0px;">
+                <div class="about-content">
+                    <p><img src="img/evensoftware/logo_rc2_150x150.png"></p>
+                    <p>
+                        <br />
+                        <br />
+                        <!-- <strong>PHP 5.3 Zend Certification Exam Study Guide</strong> -->
+                        <strong>PHP 5 Study Quiz</strong>
+                        <br />
+                        <p>
+                            <!-- <em>Get ready for your Zend PHP Certification Exam!</em> -->
+                            <em>Discover how many things you ignore about PHP!</em>
+                        </p>
+                        <br />
+                        <br />
+                        <br />
+                        <span style="font-size: .8em;">
+                            Version 0.9
+                            <br />
+                            <b>by Bernat Martinez</b>
+                            <br />
+                            <a href="mailto:bernatmv@evensoftware.com">bernatmv@evensoftware.com</a>
+                            <br />
+                            <a href="#" onclick="var ref = window.open('www.evensoftware.com', '_system'); return false;">www.evensoftware.com</a>
+                        </span>
+                        <br />
+                    </p>
+                    <p class="app-credits">
+                        <br />
+                        <br />
+                        <em>Some questions obtained from:</em>
+                        <br />
+                        http://zend-php.appspot.com/questions_list
+                    </p>
+                </div>
+                <p>
+                    <br />
+                    <ul id="about-links-container" class="individual">
+                        <li><a href="#" class="whiteButton goback" id="aboutClose">Close</a></li>
+                    </ul>
+                </p>
+            </div>
+
+            <div id="question" class="" style="top: 0px;">
+                <div id="pro-version-ad" class="none">
+                    <div id="pro-version-ad-content">
+                        <div id="pro-version-ad-content-title">
+                            PRO version available!
+                        </div>
+                        <a class="button" id="pro-version-ad-close" href="#" onclick="return false;">close</a>
+                        <div id="pro-version-ad-content-text">
+                            <div class="ad-list">More than 250 questions! (170 more)</div>
+                            <div class="ad-list">Without ads!</div>
+                            <div class="ad-list">ONLY 0,90€!</div>
+                            <a href="link to itunes/googleplay">
+                                <div id="pro-version-ad-icon">
+                                    <div id="pro-version-ad-icon-text">PHP Study Quiz</div>
+                                    <div id="pro-version-ad-icon-link">link to itunes/googleplay</div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="toolbar">
+                    <h1>Loading...</h1>
+                    <a class="back question-out" href="#home">Menu</a>
+                </div>
+                <div id="question-content" class="info" style="display:none;"></div>
+            </div>
+        </div>
+
+        <script type="text/javascript" src="cordova.js"></script>
+        <script src="js/library.js" type="text/javascript" charset="utf-8"></script>
+        <script src="js/zepto/zepto.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="js/zepto/zepto.data.js" type="text/javascript" charset="utf-8"></script>
+        <script src="js/hammer/jquery.hammer.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="js/jqtouch/jqtouch.min.js" type="text/javascript" charset="utf-8"></script>
+
+        <script src='js/syntax/scripts/shCore.js' type="text/javascript"></script>
+        <script src='js/syntax/scripts/shBrushPhp.js' type="text/javascript"></script>
+        <script src='js/syntax/scripts/shBrushXml.js' type="text/javascript"></script>
+        <script src='js/icheck/zepto.icheck.min.js' type="text/javascript"></script>
+
+        <script type="text/javascript" src="js/questions.db.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+
+        <script type="text/javascript">
+            app.initialize();
+        </script>
+
+    </body>
+</html>

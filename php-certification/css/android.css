@@ -1,0 +1,16 @@
+
+.answer-correct {
+    background-color: #3DBB3D !important;
+}
+
+.answer-incorrect {
+    background-color: #BB1122 !important;
+}
+
+#jqt option,
+#jqt optgroup{
+    background-color: #7B7C7F;
+/*
+    background: -webkit-linear-gradient(top, rgb(123, 124, 127), rgb(105, 106, 109) 30%, rgb(85, 86, 88) 65%, rgb(70, 71, 72));
+*/
+}
