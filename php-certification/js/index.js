@@ -28,7 +28,7 @@ $.jQTouch({
 
 // version
 var VERSION = "FREE";
-var AD_COUNTER = 8;
+var AD_COUNTER = 0;
 var adCounter = 0;
 
 // app Object

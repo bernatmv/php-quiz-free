@@ -227,10 +227,10 @@ span.no-bookmark {
 }
 
 #jqt #pro-version-ad-content {
-    width: 400px;
+    width: 340px;
     height: 100%;
     margin: 0 auto;
-    padding: 0 30px;
+    padding: 0 12px;
     text-align: left;
     font-weight: bold;
     color: #333;
