@@ -12,7 +12,7 @@
     <iOSStatusBarStyle>Hidden</iOSStatusBarStyle>
     <AndroidHardwareAcceleration>True</AndroidHardwareAcceleration>
     <BundleVersion>1.0</BundleVersion>
-    <iOSDisplayName>PHP Study Quiz</iOSDisplayName>
+    <iOSDisplayName>PHP Study Quiz FREE</iOSDisplayName>
     <AndroidVersionCode>1</AndroidVersionCode>
     <iOSDeviceFamily>1;2</iOSDeviceFamily>
     <FrameworkVersion>3.0.0</FrameworkVersion>
