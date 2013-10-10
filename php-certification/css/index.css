@@ -223,6 +223,7 @@ span.no-bookmark {
     position: absolute;
     z-index: 1000;
     background: url(../img/texture_2.jpg) repeat -70px -20px;
+    font-size: 12px;
 }
 
 #jqt #pro-version-ad-content {
