@@ -108,7 +108,7 @@ var app = {
 
         // pro version close button
         $("#pro-version-ad-close").hammer().on("tap", function (e) {
-            $("#jqt #pro-version-ad").addClass('none');
+            $("#jqt #pro-version-ad").addClass("none");
         });
     },
 
@@ -146,7 +146,6 @@ var app = {
         // bind LI for the click
         $(".question-answer").on("click", function (e) {
             var aid = $(this).attr('aid');
-            console.debug($(this).find('input[id="'+aid+'"]').val());
             $(this).find('input[id="'+aid+'"]').iCheck('toggle');
         });
     },
@@ -359,7 +358,9 @@ var app = {
         // pro version ad control
         if (adCounter >= AD_COUNTER) {
             // show pro version ad
-            $("#jqt #pro-version-ad").removeClass('none');
+            if ($("#jqt #pro-version-ad").hasClass("none")) {
+                $("#jqt #pro-version-ad").removeClass("none");
+            }
             // reset counter
             adCounter = 0;
         }
