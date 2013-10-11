@@ -6,8 +6,7 @@
     <AppIdentifier>com.evensoftware.phpstudyquiz</AppIdentifier>
     <ProjectName>php-certification</ProjectName>
     <IsRunnable>true</IsRunnable>
-    <AndroidPermissions>
-    </AndroidPermissions>
+    <AndroidPermissions>android.permission.INTERNET</AndroidPermissions>
     <DeviceOrientations>Portrait</DeviceOrientations>
     <iOSStatusBarStyle>Hidden</iOSStatusBarStyle>
     <AndroidHardwareAcceleration>True</AndroidHardwareAcceleration>
