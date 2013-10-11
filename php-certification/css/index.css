@@ -291,6 +291,6 @@ span.no-bookmark {
     font-size: 1.1em;
 }
 
-#jqt div.back.question-out {
+#jqt a.back.question-out {
     padding-left: 12px !important;
 }
