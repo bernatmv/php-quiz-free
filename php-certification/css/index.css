@@ -290,3 +290,7 @@ span.no-bookmark {
     margin: 4px 0 0 0;
     font-size: 1.1em;
 }
+
+#jqt div.back.question-out {
+    padding-left: 12px;
+}

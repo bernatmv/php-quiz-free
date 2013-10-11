@@ -14,3 +14,13 @@
     background: -webkit-linear-gradient(top, rgb(123, 124, 127), rgb(105, 106, 109) 30%, rgb(85, 86, 88) 65%, rgb(70, 71, 72));
 */
 }
+
+#jqt select,
+#jqt option,
+#jqt input[type="text"] {
+    background-color: #7B7C7F !important;
+}
+
+#jqt .question-answer > .question-hint {
+    margin: 10px auto -5px auto;
+}
