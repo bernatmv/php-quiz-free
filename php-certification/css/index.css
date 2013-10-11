@@ -292,5 +292,5 @@ span.no-bookmark {
 }
 
 #jqt div.back.question-out {
-    padding-left: 12px;
+    padding-left: 12px !important;
 }
