@@ -360,6 +360,8 @@ var app = {
             // show pro version ad
             if ($("#jqt #pro-version-ad").hasClass("none")) {
                 $("#jqt #pro-version-ad").removeClass("none");
+                var adLayer = document.getElementById('pro-version-ad');
+				adLayer.scrollIntoView();
             }
             // reset counter
             adCounter = 0;

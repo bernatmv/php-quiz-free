@@ -219,10 +219,9 @@ span.no-bookmark {
 #jqt #pro-version-ad {
     height: 100%;
     width: 100%;
-    background: #eee;
     position: absolute;
     z-index: 1000;
-    background: url(../img/texture_2.jpg) repeat -70px -20px;
+    background: #000;
     font-size: 12px;
 }
 
@@ -233,8 +232,8 @@ span.no-bookmark {
     padding: 0 12px;
     text-align: left;
     font-weight: bold;
-    color: #333;
-    background-color: #eee;
+    color: #fff;
+    background-color: #000;
     border-left: 1px solid #333;
     border-right: 1px solid #333;
 }
@@ -242,30 +241,35 @@ span.no-bookmark {
 #jqt #pro-version-ad-close {
     top: 10px;
     right: inherit;
-    margin: 0 0 0 275px;
+    margin: 0 0 0 245px;
 }
 
 #jqt #pro-version-ad-content-title {
     width: 100%;
     padding: 55px 0 2px 0;
-    font-weight: bold;
+    font-weight: normal;
     color: #CA0000;
-    font-size: 1.6em;
+    font-size: 1.75em;
     border-bottom: 1px solid #CA0000;
     margin-bottom: 25px;
 }
 
 #jqt #pro-version-ad-content-text div {
     width: 100%;
-    color: #333;
-    margin: 12px 0;
-    font-weight: bold;
-    font-size: 1.1em;
+    color: #fff;
+    margin: 15px 0;
+    font-weight: normal;
+    font-size: 1.2em;
+    line-height: 1.4em;
 }
 
 #jqt .ad-list {
-    background: url(../img/star_yellow_25x25.png) no-repeat 0 5px;
-    padding: 10px 0 0 33px;
+    padding: 10px 0 0 10px;
+}
+
+#jqt .ad-list .text-star {
+    font-size: 1.35em;
+    margin-right: 10px;
 }
 
 #jqt #pro-version-ad-content-text div#pro-version-ad-icon {
@@ -281,14 +285,14 @@ span.no-bookmark {
 
 #jqt #pro-version-ad-icon div#pro-version-ad-icon-text {
     color: #CA0000;
-    font-size: 1.25em;
+    font-size: 1.3em;
     margin: 0 0;
 }
 
 #jqt #pro-version-ad-icon div#pro-version-ad-icon-link {
-    color: #0000CA;
+    color: #9c9cff;
     margin: 4px 0 0 0;
-    font-size: 1.1em;
+    font-size: 1.2em;
 }
 
 #jqt a.back.question-out {
